@@ -1,0 +1,95 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": false,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#4A5F6A",
+          "properties": {
+            "style": "folder",
+            "postfix": " ",
+            "enable_hyperlink": false
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#FFE78F",
+          "properties": {
+            "branch_icon": "<#4A5F6A><b>\ue0a0 </b></>",
+            "display_status": false
+          }
+        },
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "#B3B9BC",
+          "properties": {
+            "display_exit_code": false,
+            "always_enabled": true,
+            "error_color": "#e91e63",
+            "color_background": false,
+            "prefix": "<b>⳻></b>"
+          }
+        }
+      ]
+    }
+  ],
+  "tooltips": [
+    {
+      "type": "git",
+      "tips": ["git", "g"],
+      "style": "plain",
+      "foreground": "#FFE78F",
+      "properties": {
+        "prefix": "",
+        "postfix": "",
+        "branch_icon": "<#4A5F6A>\ue0a0 </>",
+        "display_branch_status": true,
+        "branch_identical_icon": "",
+        "branch_ahead_icon": "<#369ECF>↑ </>",
+        "branch_behind_icon": "<#369ECF>↓ </>",
+        "branch_gone_icon": "",
+        "branch_max_length": 0,
+        "display_status": true,
+        "display_status_detail": false,
+        "display_stash_count": false,
+        "display_worktree_count": false,
+        "status_separator_icon": "<#4A5F6A> </>",
+        "local_working_icon": "<#C678DD><b>*</b></>",
+        "local_staged_icon": " <#28A5A3><b>+</b></>",
+        "stash_count_icon": " ",
+        "worktree_count_icon": " ",
+        "commit_icon": "",
+        "tag_icon": "",
+        "rebase_icon": "",
+        "cherry_pick_icon": "",
+        "revert_icon": "",
+        "merge_icon": "",
+        "no_commits_icon": "",
+        "display_upstream_icon": false,
+        "github_icon": "",
+        "gitlab_icon": "",
+        "bitbucket_icon": "",
+        "azure_devops_icon": "ﴃ",
+        "git_icon": "",
+        "status_colors_enabled": true,
+        "color_background": false
+      }
+    },
+    {
+      "type": "time",
+      "style": "plain",
+      "tips": ["time", "t"],
+      "foreground": "#4A5F6A",
+      "properties": {
+        "time_format": "15:04:05"
+      }
+    }
+  ]
+}
